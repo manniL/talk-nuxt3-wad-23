@@ -269,11 +269,20 @@ heading: Thank you for your attention!
 
 ---
 layout: intro
+hideLogoInCorner: true
 ---
 
 # Slides / Repo
 
 * Slides: [https://lichter.link/nuxt-wad-23/](https://lichter.link/nuxt-wad-23/)
+
+<img class="w-32 h-32 mt-16 mx-auto" src="https://raw.githubusercontent.com/manniL/static/main/logo-lightbulb-white-red.svg" />
+
+<style>
+  ul {
+    @apply list-none!;
+  }
+</style>
 
 ---
 

@@ -5,7 +5,7 @@
     </div>
     <LayoutFooter
       :website="website"
-      :handle="handle"
+      :hide-logo-in-corner="hideLogoInCorner"
     />
   </div>
 </template>
@@ -20,8 +20,8 @@ defineProps({
   website: {
     type: String,
   },
-  handle: {
-    type: String,
+  hideLogoInCorner: {
+    type: Boolean,
   },
 })
 </script>
