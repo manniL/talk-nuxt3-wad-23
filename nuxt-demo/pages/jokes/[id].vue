@@ -1,16 +1,13 @@
 <script setup lang="ts">
-const id = useRoute().params.id
+  // Fetch jokes
+  const route = useRoute()
+  const id = route.params.id
 
-const { data } = await useFetch<any>(`https://icanhazdadjoke.com/j/${id}`, {
-  headers: {
-    'Accept': 'application/json'
-  }
-})
+  const { data: joke } = await useFetch(`/api/jokes/${id}`)
 </script>
 
 <template>
   <div>
-    {{ id }}
-    {{ data.joke }}
+    {{ joke }}
   </div>
 </template>

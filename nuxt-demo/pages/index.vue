@@ -1,10 +1,9 @@
 <script setup lang="ts">
-  const { data } = useFetch('/api/test')
-  const result = computed(() => data.value)
+const color = useState('color', () => 'rebeccapurple')
 </script>
-
 <template>
   <div>
-    Hey from index!
+    <h1 :style="'color: ' + color">WeAreDevelopers hey!</h1>
+    <AppColorChanger />
   </div>
 </template>

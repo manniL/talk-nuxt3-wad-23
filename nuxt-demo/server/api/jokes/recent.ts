@@ -1,5 +1,6 @@
-//@ts-nocheck
+import { getRecentJokes } from "../../../server/utils/jokes.js"
+
 export default defineEventHandler(async (event) => {
-  const jokes = await useStorage('kv').getItem<any[]>('jokes') || []
+  const jokes = await getRecentJokes()
   return jokes
 })
