@@ -1132,6 +1132,7 @@ packages:
       - '@types/node'
       - eslint
       - less
+      - lightningcss
       - meow
       - optionator
       - rollup
@@ -4465,6 +4466,7 @@ packages:
       - encoding
       - eslint
       - less
+      - lightningcss
       - meow
       - optionator
       - rollup
@@ -6035,10 +6037,11 @@ packages:
       mlly: 1.4.0
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.3.9(@types/node@20.4.4)
+      vite: 4.4.7(@types/node@20.4.4)
     transitivePeerDependencies:
       - '@types/node'
       - less
+      - lightningcss
       - sass
       - stylus
       - sugarss
